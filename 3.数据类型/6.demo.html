@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>强制类型转换</title>
+    <script type="text/javascript">
+        /*
+        * 将其他类型数据转换为 String
+        * */
+        var a = 123;
+        //调用a的toString()方法，该方法不会影响原变量，会将转换的结果返回
+        a = a.toString();
+        console.log(typeof a, a);
+
+        a = true;
+        a = a.toString();
+        console.log(typeof a, a);
+
+        //a = null;
+        //a = a.toString();
+        //console.log(typeof a, a);
+
+
+        // a = undefined;
+        // a = a.toString();
+        // console.log(typeof a, a);
+
+        a = 123;
+        a = String(a);
+        console.log(typeof a, a);
+
+        a = true;
+        a = String(a);
+        console.log(typeof a, a);
+
+        a = null;
+        a = String(a);
+        console.log(typeof a, a);
+
+
+        a = undefined;
+        a = String(a);
+        console.log(typeof a, a);
+
+       /*
+       * 将其他类型数据转换为 Number
+       * */
+
+        var b = "123";
+        b = Number(b);
+        console.log(typeof b, b);
+
+        b = "abc";
+        b = Number(b);
+        console.log(typeof b, b);
+
+
+        b = true;
+        b = Number(b);
+        console.log(typeof b, b);
+
+        b = null;
+        b = Number(b);
+        console.log(typeof b, b);
+
+        b = undefined;
+        b = Number(b);
+        console.log(typeof b, b);
+
+
+        b = "123px";
+        b = parseInt(b);
+        console.log(typeof b, b);
+
+        b = "123.456px";
+        b = parseInt(b);
+        console.log(typeof b, b);
+
+        b = true;
+        b = parseInt(b);
+        console.log(typeof b, b);// NaN
+
+        /*
+        * 将其他类型数据转换为 Boolean
+        * */
+        var c = 123;
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = 0;
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = -1;
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = "0";
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = "";
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = "   ";
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+
+        c = null;
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+        c = undefined;
+        c = Boolean(c);
+        console.log(typeof c, c);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

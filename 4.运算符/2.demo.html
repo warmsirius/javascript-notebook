@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一元运算符</title>
+    <script type="text/javascript">
+        var a = 123;
+        a = +a;
+        console.log(a);
+
+        a = -a;
+        console.log(a, typeof a);
+
+        var result = 1 + "2" + 3;
+        console.log(result, typeof result);//123 string
+
+        result = 1 + +"2" + 3;
+        console.log(result, typeof result);//6 number
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
